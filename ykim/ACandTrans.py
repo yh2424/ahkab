@@ -23,6 +23,7 @@ ac_analysis = ahkab.new_ac(start=1e3, stop=1e5, points=100)
 tran_analysis = ahkab.new_tran(tstart=0, tstop=1.2e-3, tstep=1e-6, x0=None)
 
 r = ahkab.run(mycircuit, an_list=[op_analysis, ac_analysis, tran_analysis])
+# r = ahkab.run(mycircuit, an_list=[ac_analysis, tran_analysis])
 
 import pylab
 
